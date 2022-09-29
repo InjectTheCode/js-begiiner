@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Anton", sans-serif;
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+.container {
+  background: url("./computer.jpg") center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container.active-blur {
+  filter: blur(5px) brightness(0.8);
+}
+
+.btn {
+  font-family: inherit;
+  padding: 0.9rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease-in;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: lightgray;
+}
+.btn:active {
+  transform: scale(0.99);
+}
+
+.popup-container {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #e7e7e7;
+  width: 340px;
+  height: 260px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.popup-container.hide {
+  display: none;
+}
+
+h4 {
+  font-size: 3rem;
+}
+
+label {
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.input {
+  width: 70%;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
+
+.popup-btn {
+  width: 70%;
+  padding: 0.4rem;
+  border-radius: 8px;
+  margin-top: 0.6rem;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: background-color 0.3s ease-in;
+  cursor: pointer;
+}
+.popup-btn:hover {
+  background-color: lightgray;
+}
+
+.close-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  transition: background-color 0.3s ease-in;
+  cursor: pointer;
+}
+.close-icon:hover {
+  color: red;
+}

@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.top-container {
+  background: url("./image.jpg") center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-container h1 {
+  color: #fff;
+  font-size: 4rem;
+  text-align: center;
+  letter-spacing: 3px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.text {
+  margin: 50px 5%;
+  line-height: 1.5;
+}
+
+.navbar {
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  height: 60px;
+  padding: 5px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease-in;
+}
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+}
+.navbar ul li a {
+  text-decoration: none;
+  margin: 0 0.8rem;
+  color: #000;
+}
+.navbar ul li a:hover {
+  color: lightskyblue;
+}
+
+.navbar.active {
+  background: rgb(189, 210, 216);
+}
